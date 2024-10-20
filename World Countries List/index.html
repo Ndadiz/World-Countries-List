@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>WORLD COUNTRIES LIST</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family:Montserrat;
+			color: white;
+			background-color: bisque;
+		}
+		header{
+			padding: 200px 50px;
+			background-image: url('./images/globe-2.jpg');
+			background-color: #1a4fee4d;
+			background-blend-mode: overlay;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			text-align: center;
+		}
+		h1{
+			font-size: 75px;
+			font-weight: bold;
+		}
+		button{
+			background-color: purple;
+			color: white;
+			font-size: 15px;
+			font-weight: 600;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 25px;
+			margin-top: 20px;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		input{
+			text-align: center;
+			font-size: 25px;
+			padding: 5px 100px;
+			border: none;
+			border-radius: 20px;
+		}
+		.flex-input{
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			align-items: center;
+		}
+		.wrapper{
+			padding: 50px 200px;
+		}
+		.flex-countries{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+		}
+		.country-block{
+			font-family:Montserrat;
+			font-weight: 700;
+			font-size: 20px;
+			text-align: center;
+			align-content: center;
+			background-image: url('./images/map_image.jpg'), linear-gradient(#3c394b, #3F51B5);
+			background-size: 200%;
+			background-repeat: no-repeat;
+			background-blend-mode: multiply;
+			width: 15%;
+			height: 200px;
+			border-radius: 10px;
+		}
+		h2{
+			font-weight: 800;
+			margin-bottom: 10px;
+		}
+		#text{
+			transition: 1s;
+			padding: 10px;
+			border-radius: 10px;
+			background-color: #3c394b;
+			display: none;
+			font-size: 25px;
+			font-weight:  700;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>WORLD COUNTRIES LIST</h1>
+		<h2>TOTAL NUMBERS OF COUNTRIES: 193</h2>
+		<span id="text"></span>
+		<br>
+		<button id="start-with">Starting Word</button>
+		<button id="search-word">Search with any word</button>
+		<button id="a-z">&#128070;</button>
+		<br>
+		<div class="flex-input">
+			<input type="text" placeholder="Search country">
+			<svg width="32px" height="32px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.47487 4.4749C2.32698 6.62279 2.32698 10.1052 4.47487 12.2531C6.62275 14.401 10.1052 14.401 12.253 12.2531C14.4009 10.1052 14.4009 6.62279 12.253 4.4749C10.1052 2.32702 6.62275 2.32702 4.47487 4.4749ZM10.8388 10.8389C9.47199 12.2057 7.25591 12.2057 5.88908 10.8389C4.52224 9.47203 4.52224 7.25595 5.88908 5.88912C7.25591 4.52228 9.47199 4.52228 10.8388 5.88912C12.2057 7.25595 12.2057 9.47203 10.8388 10.8389Z" fill="#bbb9b9"></path> <path d="M11.1924 13.3137C10.6066 12.7279 10.6066 11.7782 11.1924 11.1924C11.7782 10.6066 12.7279 10.6066 13.3137 11.1924L16.8492 14.7279C17.435 15.3137 17.435 16.2635 16.8492 16.8492C16.2635 17.435 15.3137 17.435 14.7279 16.8492L11.1924 13.3137Z" fill="#bbb9b9"></path> </g></svg>
+		</div>
+	</header>
+	<div class="wrapper">
+		<div class="flex-countries">
+
+		</div>
+	</div>
+	<script src="./data/countries.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
